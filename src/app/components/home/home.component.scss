@@ -1,0 +1,47 @@
+.container {
+  height: 100%;
+  overflow: scroll;
+
+  .container__section {
+    height: 100%;
+    width: 100%;
+    position: sticky;
+    top: 0;
+  }
+  .hero {
+    background-color: lightcoral;
+    & > div {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100vh;
+      width: 100%;
+      background-image: url("/assets/images/background.png");
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+  .about {
+    background-color: lightblue;
+  }
+  .projects {
+    background-color: lightgreen;
+  }
+}
+.containerHero {
+  /* Center the content */
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  /* Take full size */
+  height: 100vh;
+  width: 100%;
+
+  /* Background */
+  background: url("/assets/full-background.jpeg") center center / cover
+    no-repeat;
+}
